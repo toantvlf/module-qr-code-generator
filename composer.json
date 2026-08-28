@@ -2,7 +2,7 @@
     "name": "tvtcommerce/module-qr-code-generator",
     "description": "Adds a \"Generate QR Code\" button to the admin Product and Category edit pages, producing a downloadable PNG QR code that encodes the entity's storefront URL — handy for printing on tags, flyers, and POS materials. Reuses the same endroid/qr-code library Magento core's own Magento_TwoFactorAuth module already depends on for its Google Authenticator QR codes.",
     "type": "magento2-module",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "license": "MIT",
     "authors": [
         {
@@ -12,18 +12,23 @@
     ],
     "require": {
         "php": ">=8.1",
-        "magento/framework": "*",
-        "magento/module-backend": "*",
-        "magento/module-catalog": "*",
+        "magento/framework": ">=103.0.8",
+        "magento/module-backend": ">=102.0.8",
+        "magento/module-catalog": ">=104.0.8",
         "endroid/qr-code": "^6.0.3"
     },
     "autoload": {
-        "files": ["registration.php"],
+        "files": [
+            "registration.php"
+        ],
         "psr-4": {
             "TVTCommerce\\QrCodeGenerator\\": ""
         }
     },
     "archive": {
-        "exclude": ["/tests", "/.gitignore"]
+        "exclude": [
+            "/tests",
+            "/.gitignore"
+        ]
     }
 }
