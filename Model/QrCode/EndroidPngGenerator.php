@@ -29,7 +29,7 @@ use Endroid\QrCode\Writer\PngWriter;
  * Deliberately has no Magento framework dependency of its own (no constructor injection needed)
  * so the third-party call surface stays isolated to this one class.
  */
-final class EndroidPngGenerator implements PngGeneratorInterface
+class EndroidPngGenerator implements PngGeneratorInterface
 {
     /**
      * @inheritDoc

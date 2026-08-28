@@ -12,7 +12,7 @@ namespace TVTCommerce\QrCodeGenerator\Model\QrCode;
  * names/SKUs are free-text admin input and must never be trusted verbatim inside an HTTP
  * response header (header injection / invalid-filename risk).
  */
-final class FilenameSanitizer
+class FilenameSanitizer
 {
     /**
      * Build a "qr-code-<slug>.png" filename from an arbitrary label.

@@ -11,7 +11,7 @@ namespace TVTCommerce\QrCodeGenerator\Model\QrCode;
  * out-of-range input: an admin fiddling with the URL query string should get a clamped, still-
  * usable QR code back, not a hard error, so this fails soft by clamping rather than rejecting.
  */
-final class SizeValidator
+class SizeValidator
 {
     /**
      * Default size (pixels) used when no "size" parameter is supplied at all.

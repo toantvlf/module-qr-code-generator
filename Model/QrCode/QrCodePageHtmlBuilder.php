@@ -14,7 +14,7 @@ use Magento\Framework\Escaper;
  * Shared between Controller\Adminhtml\Product\Generate and Controller\Adminhtml\Category\Generate
  * since both need the identical markup, only the title/url/download link differ.
  */
-final class QrCodePageHtmlBuilder
+class QrCodePageHtmlBuilder
 {
     public function __construct(
         private readonly Escaper $escaper
