@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * Merges into vendor/magento/module-catalog/view/adminhtml/ui_component/category_form.xml's
+ * <buttons> list — same merge mechanism as this module's product_form.xml (see that file's
+ * comment for the full explanation).
+ */
+-->
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <settings>
+        <buttons>
+            <button name="tvt_generate_qr_code" class="TVTCommerce\QrCodeGenerator\Block\Adminhtml\Category\Edit\Button\GenerateQrCode"/>
+        </buttons>
+    </settings>
+</form>

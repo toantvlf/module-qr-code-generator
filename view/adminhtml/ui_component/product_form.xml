@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * Merges into vendor/magento/module-catalog/view/adminhtml/ui_component/product_form.xml's
+ * <buttons> list. UI component XML files sharing a root <form> "name" (implicit — this file has
+ * the same filename, product_form.xml) are merged across every module the same way layout XML
+ * is, so this file intentionally contains nothing except the one new <button> entry.
+ */
+-->
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <settings>
+        <buttons>
+            <button name="tvt_generate_qr_code" class="TVTCommerce\QrCodeGenerator\Block\Adminhtml\Product\Edit\Button\GenerateQrCode"/>
+        </buttons>
+    </settings>
+</form>
